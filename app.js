@@ -222,3 +222,112 @@
 // Ans: 
 // let students =["abdullah","azeem","suffiyan","hassan"]
 // students.forEach((name) => console.log(name.toUpperCase()));
+
+
+// find()
+// [10,20,30,40] me se first number greater than 25 find karo.
+
+
+// Ans: 
+// console.log([10,20,30,40].find((num) => num > 25));
+
+
+// Users array me "Ali" naam ka user find karo.
+
+
+// Ans:
+// let users = ["abdullah","azeem","ali"];
+// console.log(users.find((name) => name == "ali"));
+
+
+// Ek products array me first expensive product find karo.
+
+
+// Ans:
+// let products = [
+//   { name: "Infinix Smart 8", price: 25000 },
+//   { name: "Samsung A56", price: 120000 },
+//   { name: "iPhone 16", price: 350000 }
+// ];
+
+// console.log(products.find((product) => product.price > 200000));
+
+
+
+// Ek array me first even number find karo.
+
+
+// Ans:
+// let numbers = [1, 3, 4, 5, 6, 7, 8];
+// console.log(numbers.find((num) => num % 2 === 0));
+
+
+// Students me first failed student find karo.
+
+
+// Ans:
+// let students = [
+//   { id: 1, name: "Ali", percentage: 82 },
+//   { id: 2, name: "Ahmed", percentage: 76 },
+//   { id: 3, name: "Abdullah", percentage: 95 },
+//   { id: 4, name: "Azeem", percentage: 48 },
+//   { id: 5, name: "Hamza", percentage: 91 },
+//   { id: 6, name: "Usman", percentage: 55 },
+//   { id: 7, name: "Bilal", percentage: 24 },
+  
+// ];
+
+// console.log(students.find((student) => student.percentage < 30));
+
+
+// reduce()
+
+
+// [1,2,3,4] ka sum reduce() se nikalo.
+
+
+// Ans:
+// let numArr = [1,2,3,4];
+// let sum = numArr.reduce((total ,num) => total + num,0);
+// console.log(sum)
+
+
+// Prices array ka total calculate karo.
+
+
+// Ans:
+// let prices = [1200, 850, 4500, 2300, 999, 1500, 3200, 700];
+// let sum = prices.reduce((total,num) => total + num,0)
+// console.log(sum);
+
+
+// Ek words array ko single sentence me convert karo.
+
+
+// Ans:
+// let words = ["I", "Love", "JavaScript"];
+// let sentence = words.reduce((result,words) => result + " " + words)
+// console.log(sentence);
+
+
+// Shopping cart ka total bill calculate karo.
+
+// Ans:
+// let cart = [
+//   { name: "Laptop", price: 85000 },
+//   { name: "Mouse", price: 2500 },
+//   { name: "Keyboard", price: 4500 },
+//   { name: "Headphones", price: 6000 },
+//   { name: "USB Drive", price: 1800 }
+// ];
+
+// let sum = cart.reduce((total,product) => total + product.price,0 )
+
+// cart.forEach((product) => console.log(product.price));
+// console.log("total price",sum)
+
+
+
+
+
+
