@@ -328,6 +328,52 @@
 
 
 
+// findLastIndex()
+// [1,2,3,2,4,2] me last 2 ka index find karo.
+
+// Ans:
+// let number = [1,2,3,2,4,2];
+// console.log(number.lastIndexOf(2));
+
+
+// Last even number ka index find karo.
+
+
+// Ans:
+// let numbers = [1, 3, 8, 5, 10, 7, 12];
+// console.log(numbers.findLastIndex((num) => num % 2 === 6));
+
+
+// Ek names array me last "Ali" ka index find karo.
+
+// Ans:
+// let names = ["Ahmed","Usman","Ali","Azeem","Hamza","Bilal","Ali"];
+// console.log(names.findLastIndex((name) => name == "Ali"));
+
+
+
+// Ek products array me last expensive product ka index nikalo.
+
+// Ans:
+// let products = [
+//   { name: "Infinix Smart 8", price: 25000 },
+//   { name: "Samsung A36", price: 95000 },
+//   { name: "Redmi Note 14", price: 42000 },
+//   { name: "iPhone 16", price: 350000 },
+//   { name: "Realme 14", price: 38000 },
+//   { name: "Samsung S25 Ultra", price: 420000 },
+//   { name: "Tecno Spark 30", price: 29000 }
+// ];
+// console.log(products.findLastIndex((price) => price.price > 30000));
+
+
+// Array me last negative number ka index find karo.
+
+
+// Ans:
+// let numbers = [15, -8, 22, 10, -3, 7, -15, 30, -5];
+// console.log(numbers.findLastIndex((num) => num < 0));
+
 
 
 
