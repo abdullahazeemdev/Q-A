@@ -375,5 +375,401 @@
 // console.log(numbers.findLastIndex((num) => num < 0));
 
 
+// Objects
+
+
+// Object kya hota hai JavaScript me?
+
+// Ans:object javascript ka data type ha ju values ko key-values ka pair bana kar store karta ha 
+
+
+// Ek student object banao jisme name aur age ho.
+
+
+// Ans:
+// let student = {
+//     name: "Abdullah",
+//     age: 18
+// };
+// console.log(student);
+
+
+// Object ki property access karne ke 2 methods likho.
+
+
+// Ans:
+// let student = {
+//     name: "Abdullah",
+//     age: 18
+// };
+
+// console.log(student.name , student.age);
+// console.log(student["age"], student["name"]);
+
+
+
+// Object me new property add karo.
+
+
+// 
+// let student = {
+//     name:"abdullah",
+//     age:18
+// };
+// student.pass = true
+// console.log(student)
+
+// Object ki property delete karo.
+
+
+// Ans:
+// let student = {
+//     name:"abdullah",
+//     age:18,
+//     pass: true
+// };
+
+// delete student.pass;
+// console.log(student)
+
+
+// Ek car object banao jisme brand aur model ho.
+
+
+// Ans:
+// let cars = {
+//       brand: "Suzuki",
+//       model: "Alto"
+//  };
+//  console.log(cars)
+
+
+// Object ke andar function ka example do.
+
+
+// Ans:
+
+// let student =  { 
+//     name:"Abdullah",
+//     age:18,
+
+//     greet:function(){
+//         console.log(`hello my name is ${student.name}`);
+//         console.log("I am " + this.age + " year old")
+//     };
+// };
+// student.greet();
+
+
+// this keyword object me kya karta hai?
+
+
+// Ans:this keyword object ma us obkect ko target karta ha jis object ma use hu.
+
+
+// Object keys kaise nikalte hain?
+
+
+// Ans:
+
+// let student = {
+//   name: "Abdullah",
+//   age: 18,
+//   city: "Karachi"
+// }
+
+// console.log(Object.keys(student))
+
+
+
+// Object values kaise nikalte hain?
+
+
+// Ans:
+// let student = {
+//     name:"abdullah",
+//     age:18,
+//     pass:true
+// }
+
+// console.log(Object.values(student));
+
+
+
+// Nested Objects
+
+
+// let students = {
+//     student1: {
+//      name:"abdullah",
+//      age:"18"
+//     },
+
+//     student2:{
+//      name:"misba",
+//      age:17
+//     }
+// }
+
+// console.log(students)
+
+
+
+// Ek object ke andar object ka example banao.
+
+
+// Ans:
+// let student = {
+//     student1:{
+//         name:"abdullah",
+//         age:18,
+
+//         address:{
+//          city:"karachi",
+//          country:"pakistan"
+//         }
+//     }
+// }
+// console.log(student)
+
+
+
+// User object ke andar address object create karo.
+
+
+// Ans:
+// let user = {
+//     name:"user",
+//     age:20,
+
+//     adress:{
+//         city:"karachi"
+//     }
+// }
+// console.log(user)
+
+
+
+// Nested object ki city access karo.
+
+
+// Ans:
+// let user = {
+//     name:"user",
+//     age:20,
+
+//     adress:{
+//         city:"karachi"
+//     }
+// }
+// console.log(user.adress.city)
+
+
+// Student object me marks object add karo.
+
+
+// Ans:
+// let student = {
+//     name:"abdullah",
+//     age:18,
+//     pass:true
+// }
+
+// student.marks = 70;
+// console.log(student);
+
+
+
+// Company object me employee object create karo.
+
+
+// Ans:
+// let company = {
+//     employee:{
+//         name:"Ali"
+//     }
+// }
+
+// console.log(company)
+
+
+
+// Array of Objects
+
+
+// Array of objects kya hota hai?
+
+// Ans:array object ka mtlb ek array ma ak ia ak sa zayda objects hu .
+
+// Students ka array banao jisme har student ka name aur marks ho.
+
+// let students =[
+//     { name:"abdullah", marks:78},
+//     {name:"misba",marks:78},
+//     {name:"ali",marks:35}
+// ];
+// console.log(students);
+
+
+// Array of objects me se sirf names print karo.
+
+
+// Ans:
+// let students =[
+//     { name:"abdullah", marks:78},
+//     {name:"misba",marks:78},
+//     {name:"ali",marks:35}
+// ];
+// console.log(students[0].name);
+// console.log(students[1].name);
+// console.log(students[2].name);
+
+// Passed students filter karo from array of objects.
+
+
+// Ans:
+// let students =[
+//     { name:"abdullah", marks:78},
+//     {name:"misba",marks:78},
+//     {name:"ali",marks:35}
+// ];
+
+// let result = students.filter((student) => student.marks >= 40)
+// console.log(result)
+
+// map() use karke students names uppercase me convert karo.
+
+
+// Ans:
+// let students =[
+//     { name:"abdullah", marks:78},
+//     {name:"misba",marks:78},
+//     {name:"ali",marks:35}
+// ];
+// let modifed = students.map((student) => student.name.toUpperCase())
+// console.log(modifed)
+
+
+// Highest marks wala student find karo.
+
+// Ans:
+// let students =[
+//     { name:"abdullah", marks:78},
+//     {name:"misba",marks:78},
+//     {name:"ali",marks:35}
+// ];
+
+// let find = students.find((student) => student.marks > 70)
+// console.log(find)
+
+
+// Ek products array me total stock calculate karo.
+
+// let products = [
+//     {
+//         name: "Laptop",
+//         stock: 10
+//     },
+//     {
+//         name: "Mobile",
+//         stock: 15
+//     },
+//     {
+//         name: "Headphones",
+//         stock: 8
+//     },
+//     {
+//         name: "Keyboard",
+//         stock: 12
+//     }
+// ];
+
+// let stock = products.reduce((pre , curr) => pre + curr.stock,0 )
+// console.log(stock);
+
+
+
+// Array of objects me new object push karo.
+
+
+// Ans:
+// let array = [
+//          {
+//         name: "Laptop",
+//         stock: 10
+//     },
+//     {
+//         name: "Mobile",
+//         stock: 15
+//     },
+//     {
+//         name: "Headphones",
+//         stock: 8
+//     },
+//     {
+//         name: "Keyboard",
+//         stock: 12
+//     }
+// ];
+
+// let mouse = {
+//     name:"mouse",
+//     stock:6
+// }
+
+// array.push(mouse)
+
+
+// User object ko array me find karo.
+
+
+// Ans:
+// let users = [
+//     {
+//         id: 1,
+//         name: "Abdullah",
+//         age: 18
+//     },
+//     {
+//         id: 2,
+//         name: "Ali",
+//         age: 20
+//     },
+//     {
+//         id: 3,
+//         name: "Misba",
+//         age: 17
+//     }
+// ];
+
+
+// let find = users.find((id) => id.id === 2)
+// console.log(find)
+
+// Array of objects ko loop se print karo.
+
+
+// Ans:
+// let users = [
+//     {
+//         id: 1,
+//         name: "Abdullah",
+//         age: 18
+//     },
+//     {
+//         id: 2,
+//         name: "Ali",
+//         age: 20
+//     },
+//     {
+//         id: 3,
+//         name: "Misba",
+//         age: 17
+//     }
+// ];
+
+// users.forEach((user) => console.log(user))
+
+
 
 
