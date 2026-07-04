@@ -773,3 +773,528 @@
 
 
 
+
+
+
+// =================================================================================================
+
+// 📌 Array Destructuring (7 Questions)
+
+
+// Question 1
+// Destructure the first and second values.
+
+
+
+// const fruits = ["Apple", "Banana", "Orange"];
+
+
+// const [apple,banana] = fruits
+
+// console.log(apple,banana)
+
+
+
+// Apple
+
+// Banana
+
+
+
+// Question 2
+// Skip the second element.
+
+
+
+// const colors = ["Red", "Green", "Blue"];
+
+// const [red, ,blue] = colors;
+
+// console.log(red,blue)
+
+
+
+// Red
+
+// Blue
+
+
+
+// Question 3
+// Store the remaining values in another array.
+
+
+
+// const number = [10, 20, 30, 40, 50];
+
+// const [ten,...numbers] = number
+// console.log(ten);
+// console.log(...numbers)
+
+
+
+
+// 10
+
+// [20,30,40,50]
+
+
+
+// Question 4
+// Swap two variables using destructuring.
+
+
+
+
+
+// let a = 5;
+
+// let b = 10;
+
+
+// [a,b = b,a]
+
+// console.log("a ==>",a)
+// console.log("b ==>",b)
+
+
+// a = 10
+
+// b = 5
+
+
+
+// Question 5
+// Give default values.
+
+
+
+// const names = ["Ali"];
+
+// const [ali, ahmad = "ahmad"] = names
+
+// console.log(ali);
+// console.log(ahmad);
+
+
+
+
+// Ali
+
+// Ahmed
+
+
+
+// Question 6
+// Nested array destructuring.
+
+
+
+// const data = ["HTML", ["CSS", "JavaScript"]];
+
+
+
+// const [html,[css,javascript]] = data
+
+// console.log(html)
+// console.log(css)
+// console.log(javascript)
+
+
+
+// HTML
+
+// CSS
+
+// JavaScript
+
+
+
+// Question 7
+// Destructure all values.
+
+
+
+
+
+// const marks = [80, 90, 95];
+
+// const [one , two , three] = marks
+// console.log(one , two , three)
+
+
+
+// Print all three.
+
+// 📌 Object Destructuring (7 Questions)
+// Question 8
+// Destructure name and age.
+
+
+
+
+
+// const user = {
+
+// name: "Hasan",
+
+// age: 23,
+
+// city: "Lahore"
+
+// };
+
+
+// const {name,age} = user
+// console.log(name);
+// console.log(age);
+
+
+
+
+
+// Hasan
+
+// 23
+
+
+
+// Question 9
+// Rename variables.
+
+
+
+
+
+// const student = {
+
+// name: "Ayesha",
+
+// class: "10th"
+
+// };
+
+
+// const {name : studentName, class : studentClass} = student
+// console.log(studentName)
+// console.log(studentClass)
+
+// studentName
+
+// studentClass
+
+
+
+// Question 10
+// Use default value.
+
+
+
+
+
+// const employee = {
+
+// name: "Ahmed"
+
+// };
+
+// const {name , salary = 500000} = employee
+
+// console.log(name)
+// console.log(salary)
+
+
+// Ahmed
+
+// 50000
+
+
+
+// Question 11
+// Nested object destructuring.
+
+
+
+
+
+// const person = {
+
+// name: "Ali",
+
+// address: {
+
+// city: "Karachi",
+
+// country: "Pakistan"
+
+// }
+
+// };
+
+
+// const {address: {city,country}} = person;
+// console.log(city)
+// console.log(country)
+
+
+
+// Karachi
+
+// Pakistan
+
+
+
+// Question 12
+// Destructure everything.
+
+
+
+
+
+// const product = {
+
+// title: "Laptop",
+
+// price: 80000,
+
+// brand: "Dell"
+
+// };
+
+// const {title,price,brand} = product
+// console.log(title,price,brand)
+
+
+
+// Print all values.
+
+// Question 13
+// Extract only email.
+
+
+
+
+
+// const account = {
+
+// username: "coder123",
+
+// email: "coder@gmail.com",
+
+// password: "12345"
+
+// };
+
+// const {email} = account;
+// console.log(email)
+
+
+
+// Question 14
+// Combine object and array destructuring.
+
+
+
+
+
+// const company = {
+
+// employees: ["Ali", "Ahmed", "Sara"]
+
+// };
+
+// const {employees:[ali,ahmad,sara]} = company
+
+// console.log(ali);
+// console.log(ahmad);
+// console.log(sara);
+
+
+
+
+
+// Ali
+
+// Ahmed
+
+// Sara
+
+
+
+// 📌 Rest Operator (3 Questions)
+// Question 15
+// Collect remaining values.
+
+
+
+
+
+// const number = [1,2,3,4,5];
+
+// const [one,two,...others] = number
+// console.log(one)
+// console.log(two)
+// console.log(...others)
+
+
+
+
+
+// 1
+
+// 2
+
+// [3,4,5]
+
+
+
+// Question 16
+// Collect remaining object properties.
+
+
+
+
+
+// const user = {
+
+// name: "Hasan",
+
+// age: 22,
+
+// city: "Lahore",
+
+// country: "Pakistan"
+
+// };
+
+// const {name,...data} = user
+// console.log(name);
+// console.log(data);
+
+// name
+
+// remaining object
+
+
+
+// Question 17
+// Create a function using Rest Parameters.
+
+// Example
+
+
+
+
+
+// sum(10,20,30,40);
+
+
+
+// Expected Output
+
+
+
+// 100
+
+
+
+// Hint:
+
+// Use
+
+
+
+// function sum(...number){
+//    const total = number.reduce((total,current) => total + current,0)
+//    console.log(total)
+   
+// }
+// sum(10,20,30,40);
+
+
+// 📌 Spread Operator (3 Questions)
+// Question 18
+// Merge two arrays.
+
+
+// const frontend = ["HTML", "CSS"];
+
+// const backend = ["Node", "MongoDB"];
+
+
+// const fullStack = [...frontend,...backend]
+// console.log(fullStack)
+
+
+
+// ["HTML","CSS","Node","MongoDB"]
+
+
+
+// Question 19
+// Copy an array.
+
+
+
+
+
+// const fruits = ["Apple","Banana","Orange"];
+
+// const [...fruit] = fruits
+
+// console.log(...fruit)
+
+
+
+
+
+// Create a new copy using the spread operator.
+
+// Question 20
+// Merge two objects.
+
+
+
+
+
+// const user = {
+
+// name: "Hasan"
+
+// };
+
+
+
+// const details = {
+
+// age: 22,
+
+// city: "Lahore"
+
+// };
+
+
+// const data = {...user,...details}
+// console.log(data)
+
+
+
+
+
+
+
+
+// {
+
+// name: "Hasan",
+
+// age: 22,
+
+// city: "Lahore"
+
+// }
+// 
+
+
+
+
