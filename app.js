@@ -1490,7 +1490,22 @@
 // Q11.
 // Destructuring kya hoti hai?
 
+// Ans: object ia arr ki values ko asani sa variable store karna 
+
+
 // Array aur Object dono ki syntax likhein.
+
+// let arr = [10,20];
+// let [a ,b] = arr
+
+// const user = {
+//     name:"Ali",
+//     age:20
+// };
+
+// const {name,age} = user;
+    
+
 
 
 // Q12.
@@ -1510,6 +1525,7 @@
 
 // console.log(b);
 
+// blue
 
 
 // Q13.
@@ -1535,6 +1551,7 @@
 
 // console.log(age);
 
+// 22
 
 
 // Q14.
@@ -1556,6 +1573,9 @@
 
 // };
 
+// const {address:{city} } = user
+
+// console.log(city);
 
 
 // City ko destructuring se nikalein.
@@ -1565,6 +1585,7 @@
 
 // Q15.
 // Shallow Copy aur Deep Copy me kya difference hai?
+// Ans: shallow copy first copy karta ha aur deep copy full copy karta ha 
 
 
 // Q16.
@@ -1598,6 +1619,8 @@
 
 // console.log(user1.address.city);
 
+// Lahore
+
 
 
 // Q17.
@@ -1605,9 +1628,15 @@
 
 // Explain karein.
 
+// Ans:spread operator first copy karta ha aur Nested object ka refference deta ha ,
+// isiliya nested object ma change huna par orignial arr bhi change huga 
+
+
 
 // Q18.
 // JavaScript me Deep Copy banane ke 3 methods likhein.
+
+// Ans: structuredClone(obj),JSON.parse(JSON.stringify(obj))
 
 
 
@@ -1615,6 +1644,8 @@
 
 // Q19.
 // Rest Operator aur Spread Operator me kya difference hai?
+
+// Ans: rest operator value ko collect karta ha aur spread operater value ko expend karta ha
 
 
 // Q20.
