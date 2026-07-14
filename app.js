@@ -1663,6 +1663,8 @@
 
 // console.log(newArr);
 
+// arr = [10,20,30,40]
+
 
 
 // Q21.
@@ -1681,6 +1683,8 @@
 
 
 // total(10,20,30,40);
+
+// [10,20,30,40]
 
 
 
@@ -1705,6 +1709,8 @@
 
 // };
 
+// let merge = {...obj1, ...obj2}
+
 
 
 // Expected
@@ -1727,6 +1733,9 @@
 // Q23.
 // map() aur forEach() me kya difference hai?
 
+// forEach simple loop ki tarha huta ha aur return nhi karta
+// map modified arry ha aur return bhi karta ha 
+
 
 // Q24.
 // filter() ka use karke sirf even numbers return karein.
@@ -1735,7 +1744,9 @@
 
 
 
-// [1,2,3,4,5,6]
+
+
+// console.log([1,2,3,4,5,6].filter(num => num % 2 === 0))
 
 
 
@@ -1750,7 +1761,7 @@
 
 
 
-// [10,20,30]
+// console.log([10,20,30].reduce((pre,curr) => pre + curr,0))
 
 
 
@@ -1763,11 +1774,18 @@
 // Q26.
 // find() aur filter() me kya difference hai?
 
+// find ak hi value lakar deta ha ju match hu condition sa
+// filter woh sara element lakar deta ha ju condition sa match hu 
+
 
 // Section 7 – call(), apply(), bind() (27–29)
 
 // Q27.
 // call(), apply(), aur bind() me difference explain karein.
+
+// call alag alag argument ma pass huta ha 
+// apply array ma argument pass huta ha 
+// bind new array return karta ha 
 
 
 // Q28.
@@ -1793,7 +1811,7 @@
 
 // greet.call(user,"Karachi");
 
-
+// Hasan Karachi
 
 // Q29.
 // Output batayein.
@@ -1819,8 +1837,9 @@
 // const result = sayHello.bind(user);
 
 
-
 // result("Pakistan");
+
+// Ali Pakistan
 
 
 
@@ -1840,7 +1859,7 @@
 
 // };
 
-
+// user object banaya jisme skills ek nested array hai.
 
 // const copy = {
 
@@ -1848,9 +1867,10 @@
 
 // };
 
-
+// Spread operator se Shallow Copy bani.
 
 // copy.skills.push("JavaScript");
+
 
 
 
@@ -1858,15 +1878,22 @@
 
 // console.log(copy.skills);
 
-
+// copy.skills aur user.skills dono same array ko refer karte hain, isliye original bhi change ho gaya.
 
 // Is code me Shallow Copy hui hai ya Deep Copy?
+
+// shallow copy
+
 // Is problem ko Deep Copy se kaise solve karenge?
+
+// const copy = structuredClone(user);
+
+
 // Agar structuredClone() use karein to output me kya farq padega?
 
 
 
-
+// structuredClone() Deep Copy banata hai, isliye copy me change karne se original user object change nahi hota.
 
 
 
